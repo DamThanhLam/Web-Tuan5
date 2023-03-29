@@ -13,7 +13,7 @@ body {
 }
 
 .menu-top {
-    display: flex;
+    display: flexgit ;
     justify-content: space-between;
     height: 50px;
     align-items: center;
@@ -50,6 +50,7 @@ img {
 .body {
     width: 900px;
     margin: 0px auto;
+    padding-top: 20px;
 }
 
 .product-title {
@@ -58,7 +59,7 @@ img {
 }
 
 .top-product-title * {
-    color: rgb(226, 223, 223);
+    color: rgb(184, 184, 184);
 }
 
 .top-product-title p:last-child {
@@ -99,8 +100,10 @@ img {
 }
 
 .rate-left p:last-child {
-    color: rgb(226, 223, 223);
+    color: rgb(184, 184, 184);
 }
+
+
 
 .img-product {
     margin: 30px 0px 30px 0px;
@@ -134,12 +137,250 @@ img {
 }
 
 .buy {
-    width: 20%;
+    width: 25%;
     height: 80%;
-    border: 1px solid rgb(187, 187, 187);
 }
 
+.buy > *{
+    width: 98%;
+    padding: 5px;
+    margin: 3px;
+    border: none;
+    background-color: rgb(230, 230, 230);
+}
+.buy div:first-child{
+    background-color: white;
+
+}
 .buttom-description {
     display: grid;
     grid-template-columns: 170px 170px;
+}
+
+.price{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+.price *{
+    font-weight: 900;
+    display: inline-block;
+    font-size: 30px;
+    color: rgb(46, 221, 221);
+}
+
+.price p:first-child{
+    font-size: 25px;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.total *{
+    margin: 0px;
+}
+.total p:first-child{
+    color: rgb(148, 148, 148);
+}
+
+.total p:last-child{
+    font-weight: 800;
+}
+.buy > button{
+    padding: 10px 0px 10px 0px;
+    background-color: rgb(46, 221, 221);
+    color: white;
+    border-radius: 4px;
+}
+.buy div:last-child{
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px 0px 0px 0px;
+    background-color: white;
+    color: rgb(46, 221, 221);
+    border: 1px solid rgb(46, 221, 221);
+    border-radius: 4px;
+}
+.add-to-cart p:last-child{
+    margin: 0px;
+    margin-left: 10px;
+}
+
+.product{
+    border-bottom: 1px solid rgb(179, 179, 179);
+}
+
+
+.review{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-gap: 0px 10%; 
+    border-bottom: 1px solid rgb(179, 179, 179);
+}
+.item-review > div{
+    display: flex;
+
+}
+.user-name{
+    display: flex;
+    margin: 0px;
+    
+}
+.user div:nth-child(2){
+    margin: 0px 0px 0px 9px;
+}
+.user-name p:first-child{
+    margin-right: 20px;
+    margin-bottom: 0px;
+}
+.user-name p:last-child{
+    margin-right: 20px;
+    margin-bottom: 0px;
+    color: rgb(179, 179, 179);
+}
+.item-review div:last-child{
+    margin-top: 10px;
+}
+.text-review{
+    display: flex;
+    justify-content: space-between;
+    grid-area: 1/ 1/ 2/ 3;
+    align-items: center;
+}
+.left-text-review, .right-text-review{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.left-text-review *,.right-text-review *{
+    margin: 0px 5px 0px 0px;
+}
+.left-text-review b:first-child{
+    font-size: 25px;
+}
+.left-text-review p:last-child{
+    color: rgb(179, 179, 179);
+}
+.right-text-review{
+    color: rgb(179, 179, 179);
+}
+
+.related{
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-gap: 0px 3%;
+    padding: 0px 0px 80px 0px;
+    border-bottom: 1px solid rgb(179, 179, 179);
+}
+.related div:first-child{
+    grid-area: 1/1/2/5;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px 20px 0px;
+}
+
+.text-related div{
+    display: flex;
+    align-items: center;
+    
+}
+.text-related div *{
+    margin: 0px 5px 0px 0px;
+    color: rgb(179, 179, 179);
+}
+.text-related b{
+    font-size: 20px;
+}
+
+.item-related{
+    border: 1px solid rgb(238, 238, 238);
+}
+
+.item-related > img{
+    width: 100%;
+}
+.item-related div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 10px;
+}
+.product-title-related b{
+    font-size: 18px;
+    font-weight: 800;
+}
+.item-related p:nth-child(3){
+    font-weight: 800;
+    margin: 0px 0px 5px 10px;
+    color: rgb(46, 221, 221);
+}
+
+.item-related div:last-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 10px 10px 10px;
+}
+
+.item-related div *{
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.item-related div > p{
+    color: rgb(179, 179, 179);
+}
+
+.flooter{
+    padding: 50px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flooter b{
+   font-weight: 800;
+   margin: 20px 0px 0px 0px;
+}
+
+.flooter div input{
+    margin: 10px 0px 0px 0px;
+    border: none;
+    padding: 12px;
+    background-color: rgb(224, 224, 224);
+}
+
+.flooter div input:last-child{
+    margin: 10px 0px 0px 0px;
+    border: none;
+    padding: 12px;
+    background-color: rgb(46, 221, 221);
+    color: white;
+}
+.flooter div input:first-child{
+    border-radius: 10px 0px 0px 10px;
+}
+.flooter div input:last-child{
+    border-radius: 0px 10px 10px 0px;
+}
+
+.flooter > div:nth-child(4){
+    display: flex;
+    margin: 80px 0px 0px 60px;
+}
+.flooter div div{
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.flooter div div b{
+    padding: 0px 0px 10px 0px;
+    font-size: 18px;
 }
