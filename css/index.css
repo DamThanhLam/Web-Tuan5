@@ -13,12 +13,11 @@ body {
 }
 
 .menu-top {
-    display: flexgit ;
+    display: flex ;
     justify-content: space-between;
-    height: 50px;
+    height: 49px;
     align-items: center;
-    border-width: 0px 0px 1px 0px;
-    border-style: solid;
+    border-bottom: 1px solid rgb(203, 203, 203);
 }
 
 .left-menu-top,
@@ -30,13 +29,21 @@ body {
 .left-menu-top {
     width: 50%;
 }
+.left-menu-top p:nth-child(2){
+    font-weight: 800;
+    color: rgb(46, 221, 221);
+    border-bottom: 4px solid rgb(46, 221, 221);
+}
 
 .search-menu-top {
     width: 35%;
 }
-
+.left-menu-top{
+    align-items: end;
+}
 .left-menu-top * {
-    padding: 5px;
+    padding: 7.6px;
+    margin: 0px;
 }
 
 img {
@@ -45,6 +52,12 @@ img {
 
 .search-menu-top {
     align-items: center;
+}
+.search input{
+    background-color: rgb(238, 238, 238);
+    border: none;
+    padding: 8px 8px 8px 14px;
+    border-radius: 5px;
 }
 
 .body {
@@ -59,6 +72,7 @@ img {
 }
 
 .top-product-title * {
+    margin: 20px 0px 10px 0px;
     color: rgb(184, 184, 184);
 }
 
@@ -73,6 +87,7 @@ img {
 .rate {
     display: flex;
     justify-content: space-between;
+    margin: 20px 0px 0px 0px;
 }
 
 .product-title h1:nth-child(2) {
@@ -137,8 +152,10 @@ img {
 }
 
 .buy {
-    width: 25%;
+    width: 29%;
     height: 80%;
+    border: 1px solid rgb(215, 215, 215);
+    padding: 10px;
 }
 
 .buy > *{
@@ -340,10 +357,11 @@ img {
 }
 
 .flooter{
-    padding: 50px 0px 0px 20px;
+    padding: 50px 0px 30px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 .flooter b{
    font-weight: 800;
@@ -373,14 +391,30 @@ img {
 
 .flooter > div:nth-child(4){
     display: flex;
-    margin: 80px 0px 0px 60px;
+    margin: 50px 0px;
 }
-.flooter div div{
-    margin: 0px 20px;
+.flooter > div:nth-child(4) > div{
     display: flex;
     flex-direction: column;
+    margin: 0px 20px;
+
 }
-.flooter div div b{
-    padding: 0px 0px 10px 0px;
+.flooter > div:nth-child(4) > div b{
+    padding: 0px 0px 25px 0px;
     font-size: 18px;
+}
+
+.last-flooter{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.last-flooter > div{
+    display: flex;
+    flex-direction: row;
+    color: rgb(158, 158, 158);
+}
+.last-flooter div:last-child{
+    width: 17%;
+    justify-content: space-around;
 }
